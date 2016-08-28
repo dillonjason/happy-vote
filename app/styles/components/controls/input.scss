@@ -1,0 +1,48 @@
+$input-padding: 0.25em;
+$total-height: 3em;
+$label-shrink-size: 0.75em;
+
+.input-component {
+  display: block;
+  position: relative;
+  height: $total-height;
+
+  input {
+    border: 0;
+    border-bottom: 2px solid $text-dark-dividers;
+    z-index: 1;
+    position: absolute;
+    background: transparent;
+    padding: $input-padding;
+    display: block;
+    width: calc(100% - #{$input-padding * 2});
+    bottom: 0;
+
+    &:valid {
+      border-bottom: 2px solid $text-dark-dividers;
+
+      + label {
+        bottom: #{$total-height - $label-shrink-size};
+        font-size: $label-shrink-size;
+      }
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid $accent;
+
+      + label {
+        bottom: #{$total-height - $label-shrink-size};
+        font-size: $label-shrink-size;
+      }
+    }
+  }
+
+  label {
+    position: absolute;
+    left: $input-padding;
+    bottom: $input-padding;
+    transition: 0.2s;
+    color: $text-dark-secondary;
+  }
+}
