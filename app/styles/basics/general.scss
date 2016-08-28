@@ -1,5 +1,12 @@
 .content-wrapper {
   position: relative;
-  top: $menu-height;
   margin: $general-margin;
+}
+
+body {
+  font-size: $primary-font-size-mobile;
+
+  @media screen and (min-width: $grid-md) {
+    font-size: $primary-font-size;
+  }
 }
