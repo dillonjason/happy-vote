@@ -43,7 +43,7 @@ $label-shrink-size: 0.75em;
     position: absolute;
     left: $input-padding;
     bottom: $input-padding;
-    transition: 0.2s;
+    transition: $fast-transition;
     color: $text-dark-secondary;
   }
 }

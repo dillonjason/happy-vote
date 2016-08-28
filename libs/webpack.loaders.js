@@ -20,6 +20,10 @@ exports.styleLoaders = function(paths) {
                     test: /\.(jpg|png)$/,
                     loader: 'file?name=[path][name].[hash].[ext]',
                     include: paths.images
+                },
+                {
+                    test: /\.svg/,
+                    loader: 'babel!svg-react'
                 }
             ]
         }
@@ -44,6 +48,10 @@ exports.styleExtracts = function(paths) {
                     test: /\.(jpg|png)$/,
                     loader: 'file?name=[path][name].[hash].[ext]',
                     include: paths.images
+                },
+                {
+                    test: /\.svg/,
+                    loader: 'babel!svg-react'
                 }
             ]
         },

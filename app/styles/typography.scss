@@ -1,0 +1,7 @@
+.secondary {
+  font-size: $secondary-font-size-mobile;
+
+  @media screen and (min-width: $grid-md) {
+    font-size: $secondary-font-size;
+  }
+}

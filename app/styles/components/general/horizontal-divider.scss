@@ -1,0 +1,31 @@
+.horizontal-divider-component {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: $general-margin 0;
+
+  > span {
+    position: relative;
+    display: inline-block;
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 9999px;
+      height: 1px;
+      background: $text-dark-dividers;
+    }
+
+    &:before {
+      right: 100%;
+      margin-right: $general-margin;
+    }
+
+    &:after {
+      left: 100%;
+      margin-left: $general-margin;
+    }
+  }
+}

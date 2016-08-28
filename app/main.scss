@@ -1,8 +1,13 @@
 @import 'styles/variables';
+@import 'styles/typography';
 
 // Basics
 @import 'styles/basics/general';
 @import 'styles/basics/navbar';
 
-// Components
+// Control Components
 @import 'styles/components/controls/input';
+@import 'styles/components/controls/button';
+
+// General Components
+@import 'styles/components/general/horizontal-divider';

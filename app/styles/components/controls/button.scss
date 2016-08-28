@@ -1,0 +1,53 @@
+$fab-size: 50px;
+
+.button {
+  padding: 8px 16px;
+  color: $text-light;
+  background-color: $accent;
+  border: 0;
+  border-radius: 2px;
+  transition: $fast-transition;
+
+  &:hover {
+    box-shadow: $shadow-level-1;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.flat {
+    background: transparent;
+    color: $accent;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &.fab {
+    box-shadow: $shadow-level-2;
+    height: $fab-size;
+    width: $fab-size;
+    border-radius: 50%;
+
+    &:hover {
+      box-shadow: $shadow-level-2;
+    }
+  }
+
+  > svg {
+    height: 24px !important;
+    width: 24px !important;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 24px;
+  }
+
+  &.google {
+    background-color: $white;
+    box-shadow: $shadow-level-1;
+    color: $text-dark;
+    padding: 8px;
+  }
+}
