@@ -5,6 +5,7 @@ class Login extends React.Component {
         return (
             <div>
                 <Input label="Email" type="text"/>
+                <Input label="Password" type="password"/>
             </div>
         );
     }

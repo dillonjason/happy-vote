@@ -6,6 +6,7 @@ $label-shrink-size: 0.75em;
   display: block;
   position: relative;
   height: $total-height;
+  margin-bottom: $general-margin;
 
   input {
     border: 0;
